@@ -1,0 +1,96 @@
+ @font-face {
+  font-family: 'pxsans'; 
+  src: url('Font/PixelifySans-Bold.ttf') format('truetype');
+  font-weight: bold; 
+  font-style: normal;
+}
+ body{
+    text-align: center;
+  font-family: "pxsans", sans-serif;
+  background-color: black;
+  color: white;
+   background:
+  linear-gradient(180deg, #000000, #000000 65%, #f9f8f9);
+    h3{
+    color: #000000;
+    }
+      background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px),
+    linear-gradient(180deg, #000000, #000000 65%, #f9f8f9);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px, 100% 100%;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px, 0 0;
+}
+  
+    :root {
+  --fondo-boton: #040404;
+  --acento-2: #f10101;
+  --texto: #000000;
+}
+
+@keyframes flotar {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+#title h1 {
+  display: inline-block;
+  animation: flotar 2.5s ease-in-out infinite;
+}
+
+.consejo {
+  display: inline-block;
+  background: var(--fondo-boton);
+  color: var(--texto);
+  border: 2px solid var(--texto);
+  padding: 12px 24px;
+  text-decoration: none;
+  font-family: "pxsans", sans-serif;
+  cursor: pointer;
+  box-shadow: 6px 6px 0 var(--texto);
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+}
+    .consejo:hover {
+  background: var(--acento-2);
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0 var(--texto);
+  background-color: #f10101 !important;
+}
+.consejo:active {
+  transform: translate(4px, 4px);
+  box-shadow: 2px 2px 0 var(--texto);
+}
+ 
+
+.pantalla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+}
+#juego{
+  justify-content: center;
+    width: 90vw;
+    max-width: 540px;
+    aspect-ratio: 1 / 1;
+    border: none;
+    background-color: black;
+    display: block;
+}
+.level{
+  display: contents;
+  align-content: center;
+}
+.items{
+  display: contents;
+  align-content: center;
+}
